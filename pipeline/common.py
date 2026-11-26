@@ -101,7 +101,8 @@ def call_model(stage: str, shot: str, model: str, params: dict, fn: Callable[[],
                      seed=params.get("seed"), attempt=attempt, status="error",
                      error=str(e)[:500], latency_s=round(time.time() - t0, 2))
             if attempt < retries:
-                delay = base_delay * 2 ** (attempt - 1)
+                # Providers that rate-limit (HTTP 429) tell us how long to wait.
+                delay = getattr(e, "retry_after", None) or base_delay * 2 ** (attempt - 1)
                 print(f"  [{stage}/{shot}] attempt {attempt} failed: {e} - retrying in {delay:.0f}s")
                 time.sleep(delay)
     raise RuntimeError(f"{stage}/{shot} failed after {retries} attempts: {last_err}")

@@ -16,7 +16,7 @@ def main() -> None:
 
     m = sb["models"]["image"]
     try:
-        img = call_model("smoke", "image", m, {"prompt": "a red apple", "seed": 1, "steps": 4},
+        img = call_model("smoke", "image", m, {"prompt": "a red apple", "seed": 1, "steps": 4},  # seed ignored by schnell
                          lambda: generate(m, "a red apple on a wooden table", 1, 4), retries=1)
         (smoke / "image.png").write_bytes(img)
         print(f"Cloudflare {m}: OK")

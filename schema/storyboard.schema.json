@@ -84,6 +84,7 @@
           "motion_prompt": {"type": "string", "minLength": 3, "description": "Only motion + camera; the keyframe holds the subject."},
           "ken_burns": {"type": "string", "enum": ["zoom-in", "zoom-out", "pan-left", "pan-right"], "description": "Fallback motion when no Wan clip exists."},
           "seed": {"type": "integer"},
+          "tts_model": {"type": "string", "description": "Per-shot TTS model override (used when a model's daily quota ran out)."},
           "narration": {"type": "string", "description": "Line in the narration language. Empty string = no narration on this shot."},
           "narration_en": {"type": "string", "description": "English subtitle text."},
           "music_cue": {"type": "string", "enum": ["intro", "low", "build", "peak", "resolve", "silence"]}

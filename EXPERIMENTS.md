@@ -8,7 +8,8 @@ Format: **hypothesis → change (one thing, fixed seed) → result (evidence) �
 | E2 | narration | Voice A suits the story better than voice B | Same line and style, two voices | | |
 | E3 | narration | TTS mispronounces place and person names in my language | Native speaker listens to s0X | | |
 | E4 | keyframes | Repeating the identical character description keeps the face consistent | Character text injected vs paraphrased per shot, same seed | | |
-| E5 | keyframes | More steps improve FLUX schnell quality enough to be worth the latency | steps 4 vs 8, same seed | latency from runs.jsonl | |
+| E5 | keyframes | A fixed seed makes FLUX.2 klein reproducible, so I can compare prompts fairly | Same prompt + seed 7 sent twice | **Rejected:** the two images were different (see FAILURES F4). Latency 6.3 s vs 4.8 s. | Reproducibility comes from caching files by input hash. Compare candidates side by side. |
+| E5b | keyframes | FLUX.2 klein with a reference image keeps the girl more consistent than text-only FLUX.1 schnell | schnell has no seed or reference input; klein accepts `input_image_0` (tested: 200 OK, 5.5 s) | Klein chosen. Consistency comparison to fill in after keyframes. | Switched `models.image` to klein-4b |
 | E6 | keyframes | The style block alone fixes the look across shots | With and without style block | | |
 | E7 | shots | An I2V motion prompt with only motion and camera beats a full re-description | Two prompts, same keyframe + seed | | |
 | E8 | shots | 480p drafts are good enough to judge motion and save GPU minutes | 480p vs 720p on one shot | GPU minutes | |

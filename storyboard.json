@@ -10,15 +10,15 @@
     "seed": 2024
   },
   "models": {
-    "image": "@cf/black-forest-labs/flux-1-schnell",
+    "image": "@cf/black-forest-labs/flux-2-klein-4b",
     "image_steps": 8,
-    "tts": "gemini-2.5-flash-preview-tts",
+    "tts": "gemini-3.8-flash-lite-tts",
     "video": "Wan2.2-TI2V-5B",
     "video_resolution": "480p"
   },
   "voice": {
     "name": "Sulafat",
-    "style": "Read this Amharic text like a woman fondly remembering her childhood, warm and lively, with a smile in the voice:"
+    "style": "none - plain text only (inline and system instructions failed, see FAILURES F7/F8)"
   },
   "music": {
     "caption": "instrumental, playful warm acoustic score, plucked krar-like strings, light hand percussion, soft marimba, gentle bright pads, nostalgic childhood morning, East African folk texture, no lead melody, no vocals",
@@ -106,7 +106,7 @@
       "music_cue": "peak"
     },
     {
-      "id": "s08", "duration_s": 7, "shot_size": "wide", "uses_character": false,
+      "id": "s08", "tts_model": "gemini-3.1-flash-tts-preview", "duration_s": 7, "shot_size": "wide", "uses_character": false,
       "reason": "The turn from chaos to order: the whole school in straight lines, flag rising. The film slows down here.",
       "image_prompt": "wide shot of a school morning assembly outdoors, rows of children in navy uniforms standing in straight lines, a green, yellow and red flag rising on a tall pole, clear blue sky, soft morning sun",
       "motion_prompt": "the flag rises slowly and waves gently, children stand still, camera slowly tilts up",
@@ -116,7 +116,7 @@
       "music_cue": "low"
     },
     {
-      "id": "s09", "duration_s": 8, "shot_size": "close-up",
+      "id": "s09", "tts_model": "gemini-3.1-flash-tts-preview", "duration_s": 8, "shot_size": "close-up",
       "reason": "Emotional peak: her face while singing the anthem - small girl, big feeling. This is the line the film is built around.",
       "image_prompt": "close-up of the girl standing straight in line, singing with pride, chin up, eyes bright, morning sun on her face, other children softly blurred behind her",
       "motion_prompt": "she sings softly, a gentle breeze moves her ribbons, very slow push in",
@@ -126,7 +126,7 @@
       "music_cue": "peak"
     },
     {
-      "id": "s10", "duration_s": 8, "shot_size": "medium",
+      "id": "s10", "tts_model": "gemini-3.1-flash-tts-preview", "duration_s": 8, "shot_size": "medium",
       "reason": "Resolution: calm after the rush. She sits at her desk and smiles - the day, and the film, settle.",
       "image_prompt": "the girl sitting at a wooden school desk in a sunlit classroom, chalkboard behind her, red backpack on the bench, opening a notebook and smiling, warm calm light",
       "motion_prompt": "she opens her notebook and smiles, dust floating in the sunlight, slow zoom out",
