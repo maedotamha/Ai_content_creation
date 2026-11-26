@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+outputs/build/
+outputs/smoke/
+# Keep generated keyframes/narration/clips/music/final in git so the run can be inspected.
+# If the repo gets too big (>100 MB files), move outputs/final/*.mp4 to a release instead.

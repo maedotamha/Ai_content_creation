@@ -1,0 +1,139 @@
+{
+  "title": "Before the Bell",
+  "logline": "A schoolgirl in Ethiopia races through her morning (lost shoe, missed breakfast, the departing service bus) and arrives just in time to stand with everyone and sing the national anthem.",
+  "language": "am",
+  "style_block": "nostalgic hand-painted storybook illustration, soft early-morning light, warm palette of ochre, sky blue, eucalyptus green and terracotta, gentle paper texture, subject centred in frame, cinematic, no text, no letters",
+  "character": {
+    "name": "Little girl (the narrator as a child)",
+    "description": "a ten-year-old Ethiopian girl with dark brown skin, round face and bright eyes, black hair in two neat braids tied with white ribbons, wearing a school uniform of a navy blue V-neck sweater over a light blue collared shirt, a navy pleated skirt, white socks and black shoes, carrying a small red backpack",
+    "reference_prompt": "character reference sheet of the same girl, full body front view and three-quarter view side by side, standing, plain warm cream background",
+    "seed": 2024
+  },
+  "models": {
+    "image": "@cf/black-forest-labs/flux-1-schnell",
+    "image_steps": 8,
+    "tts": "gemini-2.5-flash-preview-tts",
+    "video": "Wan2.2-TI2V-5B",
+    "video_resolution": "480p"
+  },
+  "voice": {
+    "name": "Sulafat",
+    "style": "Read this Amharic text like a woman fondly remembering her childhood, warm and lively, with a smile in the voice:"
+  },
+  "music": {
+    "caption": "instrumental, playful warm acoustic score, plucked krar-like strings, light hand percussion, soft marimba, gentle bright pads, nostalgic childhood morning, East African folk texture, no lead melody, no vocals",
+    "bpm": 96,
+    "key": "G major",
+    "duration_s": 90,
+    "candidates": 3,
+    "seeds": [11, 22, 33],
+    "chosen": null,
+    "volume": 0.6
+  },
+  "end_card": {
+    "text": "Made with AI\nimages: FLUX  -  motion: Wan 2.2\nvoice: Gemini TTS  -  music: ACE-Step",
+    "duration_s": 3
+  },
+  "shots": [
+    {
+      "id": "s01", "duration_s": 6, "shot_size": "extreme-wide", "uses_character": false,
+      "reason": "Establishing shot: an Addis Ababa neighbourhood before sunrise sets the time (very early) and the place before we meet her.",
+      "image_prompt": "an Ethiopian city neighbourhood before sunrise, deep blue sky with a thin orange glow on the horizon, corrugated tin roofs, eucalyptus trees, one small house with a single warm lit window",
+      "motion_prompt": "slow push in toward the lit window, sky slowly brightening, static horizon",
+      "ken_burns": "zoom-in", "seed": 201,
+      "narration": "ልጅ እያለሁ ቀኔ የሚጀምረው ከፀሐይ በፊት ነበር።",
+      "narration_en": "When I was a child, my day started before the sun.",
+      "music_cue": "intro"
+    },
+    {
+      "id": "s02", "duration_s": 6, "shot_size": "close-up",
+      "reason": "Close-up on her sleepy face: we attach to her through a feeling everyone knows - not wanting to get up.",
+      "image_prompt": "close-up of the girl in bed under a colourful woven blanket, eyes squinting half open, hair messy, a mother's hand gently on her shoulder, dim warm lamp light",
+      "motion_prompt": "she slowly opens her eyes and rubs them, camera static",
+      "ken_burns": "zoom-in", "seed": 202,
+      "narration": "እናቴ «ተነሺ! ታረፍጃለሽ!» ስትል፣ ዓይኔን መግለጥ እንኳን ያቅተኝ ነበር።",
+      "narration_en": "My mother would call, \"Get up! You'll be late!\" and I could barely open my eyes.",
+      "music_cue": "intro"
+    },
+    {
+      "id": "s03", "duration_s": 7, "shot_size": "medium",
+      "reason": "The comic beat of the morning rush: one shoe on, searching for the other. Energy rises.",
+      "image_prompt": "the girl hopping on one foot in a small living room, one black shoe on and one in her hand, looking under a sofa, morning light through a curtain, cosy cluttered Ethiopian home",
+      "motion_prompt": "she hops and looks around quickly, slight handheld camera",
+      "ken_burns": "pan-right", "seed": 203,
+      "narration": "ከዚያ ሩጫው ይጀመራል። አንድ ጫማ እግሬ ላይ፣ ሌላኛው የት እንደገባ አይታወቅም።",
+      "narration_en": "Then the rush began. One shoe on my foot, the other nowhere to be found.",
+      "music_cue": "build"
+    },
+    {
+      "id": "s04", "duration_s": 6, "shot_size": "insert", "uses_character": false,
+      "reason": "Insert on the details of getting ready - bread, backpack, ribbon - compresses the rush into one image.",
+      "image_prompt": "close-up of a child's hands grabbing a piece of dabo bread from a kitchen table next to a small red backpack and a white hair ribbon, cup of tea steaming",
+      "motion_prompt": "hands quickly pick up the bread, steam rising, camera static",
+      "ken_burns": "zoom-out", "seed": 204,
+      "narration": "ዩኒፎርሜን ለብሼ፣ ዳቦዬን በእጄ ይዤ፣ ቦርሳዬን አንጠልጥዬ...",
+      "narration_en": "Uniform on, bread in my hand, backpack on my shoulder...",
+      "music_cue": "build"
+    },
+    {
+      "id": "s05", "duration_s": 7, "shot_size": "wide",
+      "reason": "The chase: the service bus is leaving. The peak of tension in the morning.",
+      "image_prompt": "wide shot of the girl running down a dusty neighbourhood road toward a white school minibus waiting at the corner, her braids flying, early golden sunlight, long shadows",
+      "motion_prompt": "she runs toward the bus, camera tracks slowly behind her",
+      "ken_burns": "zoom-in", "seed": 205,
+      "narration": "ሰርቪሱ ጥጉ ላይ ደርሶ ነበር። ሮጥኩ፣ ሮጥኩ... ደረስኩበት!",
+      "narration_en": "The service bus was already at the corner. I ran and ran... and I made it!",
+      "music_cue": "peak"
+    },
+    {
+      "id": "s06", "duration_s": 7, "shot_size": "medium",
+      "reason": "Release after the chase: friends and chatter on the bus. This is the warm social heart of the morning.",
+      "image_prompt": "inside a school minibus, the girl sitting by the window laughing with two school friends in the same navy uniforms, morning sun through the windows, cosy and joyful",
+      "motion_prompt": "the children laugh and talk, sunlight flickering through the window, camera static",
+      "ken_burns": "pan-left", "seed": 206,
+      "narration": "በሰርቪሱ ውስጥ ጓደኞቼ ነበሩ። ወሬ፣ ሳቅ፣ የትናንትናው ጨዋታ ታሪክ።",
+      "narration_en": "My friends were on the bus. Chatter, laughter, stories of yesterday's games.",
+      "music_cue": "build"
+    },
+    {
+      "id": "s07", "duration_s": 7, "shot_size": "wide",
+      "reason": "Arrival and play: tag in the schoolyard shows the freedom before the day's order begins.",
+      "image_prompt": "wide shot of a school compound with a dusty yard, children in navy uniforms playing tag, the girl running and laughing in the centre, classroom buildings with blue doors, eucalyptus trees, bright morning",
+      "motion_prompt": "children run and chase each other, camera slowly pans with them",
+      "ken_burns": "pan-right", "seed": 207,
+      "narration": "ትምህርት ቤት ስንደርስ፣ ደወሉ እስኪደወል ድረስ አባሮሽ እየተጫወትን ነበር።",
+      "narration_en": "At school, we played tag until the bell rang.",
+      "music_cue": "peak"
+    },
+    {
+      "id": "s08", "duration_s": 7, "shot_size": "wide", "uses_character": false,
+      "reason": "The turn from chaos to order: the whole school in straight lines, flag rising. The film slows down here.",
+      "image_prompt": "wide shot of a school morning assembly outdoors, rows of children in navy uniforms standing in straight lines, a green, yellow and red flag rising on a tall pole, clear blue sky, soft morning sun",
+      "motion_prompt": "the flag rises slowly and waves gently, children stand still, camera slowly tilts up",
+      "ken_burns": "zoom-out", "seed": 208,
+      "narration": "ከዚያ ሁላችንም በሰልፍ ቆመን፣ ሰንደቅ ዓላማው ሲወጣ እናያለን።",
+      "narration_en": "Then we all stood in lines and watched the flag go up.",
+      "music_cue": "low"
+    },
+    {
+      "id": "s09", "duration_s": 8, "shot_size": "close-up",
+      "reason": "Emotional peak: her face while singing the anthem - small girl, big feeling. This is the line the film is built around.",
+      "image_prompt": "close-up of the girl standing straight in line, singing with pride, chin up, eyes bright, morning sun on her face, other children softly blurred behind her",
+      "motion_prompt": "she sings softly, a gentle breeze moves her ribbons, very slow push in",
+      "ken_burns": "zoom-in", "seed": 209,
+      "narration": "ብሔራዊ መዝሙሩን ስንዘምር፣ ትንሽ ብሆንም ትልቅ ሆኖ ይሰማኝ ነበር።",
+      "narration_en": "When we sang the national anthem, I was small, but I felt big.",
+      "music_cue": "peak"
+    },
+    {
+      "id": "s10", "duration_s": 8, "shot_size": "medium",
+      "reason": "Resolution: calm after the rush. She sits at her desk and smiles - the day, and the film, settle.",
+      "image_prompt": "the girl sitting at a wooden school desk in a sunlit classroom, chalkboard behind her, red backpack on the bench, opening a notebook and smiling, warm calm light",
+      "motion_prompt": "she opens her notebook and smiles, dust floating in the sunlight, slow zoom out",
+      "ken_burns": "zoom-out", "seed": 210,
+      "narration": "ከዚያም ወደ ክፍል። ቀኑ ገና መጀመሩ ነበር።",
+      "narration_en": "And then, to class. The day had only just begun.",
+      "music_cue": "resolve"
+    }
+  ]
+}
